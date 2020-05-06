@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_diet"
+            android:icon="@drawable/ic_food"
+            android:title="Dieta" />
+        <item
+            android:id="@+id/nav_gym"
+            android:icon="@drawable/ic_dumbell"
+            android:title="Gimnasio" />
+
+        <item
+            android:id="@+id/nav_weight_chart"
+            android:icon="@drawable/ic_scale"
+            android:title="Registrar peso" />
+
+        <item
+            android:id="@+id/nav_measurements"
+            android:icon="@drawable/ic_measuring_tape"
+            android:title="Registrar medidas" />
+
+        <item
+            android:id="@+id/nav_recipes"
+            android:icon="@drawable/ic_recipes"
+            android:title="Recetas" />
+    </group>
+
+    <item android:title="Registros">
+        <menu>
+        </menu>
+    </item>
+</menu>

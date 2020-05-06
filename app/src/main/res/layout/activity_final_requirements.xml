@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityRequirements"
+    android:background="@color/fondo">
+
+    <TextView
+        android:id="@+id/tvN0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="80dp"
+        android:text="Sedentario"
+        android:textSize="20dp"
+        android:textColor="@color/white_pressed"/>
+
+    <TextView
+        android:id="@+id/tvN1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="150dp"
+        android:text="Trabajas sentado"
+        android:textSize="20dp"
+        android:textColor="@color/white_pressed"/>
+
+    <TextView
+        android:id="@+id/tvN2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="220dp"
+        android:text="Opción 2 + entreno"
+        android:textSize="20dp"
+        android:textColor="@color/white_pressed"/>
+
+    <TextView
+        android:id="@+id/tvN3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="290dp"
+        android:text="Opción 3 + entreno intenso"
+        android:textSize="20dp"
+        android:textColor="@color/white_pressed"/>
+
+    <TextView
+        android:id="@+id/tvN4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="360dp"
+        android:text="Trabajo físico + entreno"
+        android:textSize="20dp"
+        android:textColor="@color/white_pressed"/>
+
+    <TextView
+        android:id="@+id/tvN5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="430dp"
+        android:text="Opción 5 + entreno diario"
+        android:textSize="20dp"
+        android:textColor="@color/white_pressed"/>
+
+    <TextView
+        android:id="@+id/tvDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvN2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="0.6dp"
+        android:text="(Elige esta opción si tienes dudas)"
+        android:textSize="15dp"
+        android:textColor="@color/white"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|right"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/orange"
+        android:onClick="onClick"
+        app:borderWidth="0dp"
+        app:srcCompat="@drawable/ic_arrow_forward_white" />
+
+    <TextView
+        android:id="@+id/tvKcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="50dp" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="0dp">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="80dp"
+            android:checked="true"
+            android:onClick="checkButton" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="40dp"
+            android:onClick="checkButton" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="40dp"
+            android:onClick="checkButton" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="40dp"
+            android:onClick="checkButton" />
+
+        <RadioButton
+            android:id="@+id/rb5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="40dp"
+            android:onClick="checkButton" />
+
+        <RadioButton
+            android:id="@+id/rb6"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="40dp"
+            android:onClick="checkButton" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/orange"/>
+</RelativeLayout>

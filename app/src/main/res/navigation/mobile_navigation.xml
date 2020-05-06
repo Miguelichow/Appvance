@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.appvance.ui.home.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_diet"
+        android:name="com.example.appvance.ui.diet.DietFragment"
+        android:label="Dieta"
+        tools:layout="@layout/fragment_dieta" />
+
+    <fragment
+        android:id="@+id/nav_gym"
+        android:name="com.example.appvance.ui.gym.GymFragment"
+        android:label="Gym"
+        tools:layout="@layout/fragment_gym" />
+
+    <fragment
+        android:id="@+id/nav_weight_chart"
+        android:name="com.example.appvance.ui.weight_chart.WeightChartFragment"
+        android:label="Gráfica de peso"
+        tools:layout="@layout/activity_weight_chart" />
+
+    <fragment
+        android:id="@+id/nav_measurements"
+        android:name="com.example.appvance.ui.measurements.MeasurementsFragment"
+        android:label="Registro de medidas"
+        tools:layout="@layout/activity_hip" />
+
+    <fragment
+        android:id="@+id/nav_recipes"
+        android:name="com.example.appvance.ui.recipes.RecipesFragment"
+        android:label="Registro de medidas"
+        tools:layout="@layout/fragment_recipes" />
+</navigation>

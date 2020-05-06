@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Calculator"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            style="@style/hint"
+            app:boxStrokeColor="@color/white"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="#0DFFFFFF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etProtein"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:drawableLeft="@drawable/ic_protein"
+                android:drawableTint="@color/orange"
+                android:drawablePadding="15dp"
+                android:hint="Proteínas (g)"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionNext"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            style="@style/hint"
+            app:boxStrokeColor="@color/white"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="#0DFFFFFF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFats"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:drawableLeft="@drawable/ic_fats"
+                android:drawableTint="@color/orange"
+                android:drawablePadding="15dp"
+                android:hint="Grasas (g)"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionNext"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            style="@style/hint"
+            app:boxStrokeColor="@color/white"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="#0DFFFFFF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCarbs"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:drawableLeft="@drawable/ic_carbs"
+                android:drawableTint="@color/orange"
+                android:drawablePadding="15dp"
+                android:hint="Carbos (g)"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionDone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="405dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="430dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Convertir"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_rounded"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/orange"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="540dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginStart="100dp">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_protein"
+            android:tint="@color/orange"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_fats"
+            android:tint="@color/orange"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="55dp"/>
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_carbs"
+            android:tint="@color/orange"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="580dp"
+        android:layout_marginStart="110dp">
+
+        <TextView
+            android:id="@+id/tvProtein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/white_pressed"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="580dp"
+        android:layout_marginStart="200dp">
+
+        <TextView
+            android:id="@+id/tvFats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/white_pressed"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="580dp"
+        android:layout_marginStart="285dp">
+
+        <TextView
+            android:id="@+id/tvCarbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/white_pressed"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/orange"/>
+</RelativeLayout>

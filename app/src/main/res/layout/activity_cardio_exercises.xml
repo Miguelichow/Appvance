@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardioExercises"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:background="#363640">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="-15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ejercicios: "
+            android:textSize="20dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="-15dp"
+            android:textColor="@color/white_pressed"/>
+        <NumberPicker
+            android:id="@+id/npCardio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:theme="@style/AppTheme.Picker" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="260dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            style="@style/hint"
+            app:boxStrokeColor="@color/white"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="#0DFFFFFF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Introduce tu propio ejercicio"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:drawableLeft="@drawable/ic_dumbell"
+                android:drawableTint="@color/orange"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="445dp"
+        android:gravity="center"
+        android:text="h."
+        android:textSize="20dp"
+        android:textColor="@color/white_pressed"/>
+
+    <NumberPicker
+        android:id="@+id/npSets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="255dp"
+        android:theme="@style/AppTheme.Picker" />
+
+    <TextView
+        android:id="@+id/tvReps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="445dp"
+        android:gravity="center"
+        android:text="min."
+        android:textSize="20dp"
+        android:textColor="@color/white_pressed"/>
+
+    <NumberPicker
+        android:id="@+id/npReps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="95dp"
+        android:theme="@style/AppTheme.Picker" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="585dp">
+
+        <ImageButton
+            android:id="@+id/ibCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/ic_check"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/orange"
+        android:layout_marginTop="-48dp"/>
+</RelativeLayout>

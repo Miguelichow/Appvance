@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Appvance</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="Gym">Slideshow</string>
+
+    <string name="text_explanation">"¡Bienvenido al <font color='#EF7030'>cálculo de porciones</font>!
+        \n\nSe utilizará el <font color='#EF7030'>sistema de porciones</font> (raciones de <font color='#EF7030'>proteínas</font>, <font color='#EF7030'>grasas</font> y <font color='#EF7030'>carbohidratos</font>) para el cálculo de tus <font color='#EF7030'>requerimientos calóricos</font> según tus <font color='#EF7030'>objetivos</font>.
+        \n\nEn la <font color='#EF7030'>Tabla de Porciones</font>, podrás eligir los alimentos según tus porciones.
+        \n\n\n\n ¡<font color='#EF7030'>Vamos a ello"</font>!</string>
+
+    <string name="text_explanation2">Pulsa ahora el botón inferior derecho \npara dirigirte a la <font color='#EF7030'>Tabla de Porciones</font> \n y empezar a organizar tu dieta.</string>
+
+    <string name="subir">"Quiero <font color='#EF7030'>subir</font> de peso</string>
+    <string name="mantener">"Quiero <font color='#EF7030'>mantener</font> el peso</string>
+    <string name="bajar">"Quiero <font color='#EF7030'>bajar</font> de peso</string>
+</resources>

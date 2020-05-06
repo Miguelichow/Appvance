@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:http="http://schemas.android.com/tools"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:contentDescription="@string/nav_header_desc"
+            app:srcCompat="@mipmap/logo_orange"/>
+
+        <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appvance"
+        android:textSize="22dp"
+        android:textColor="@color/orange_pressed"
+        android:fontFamily="@font/nairi"/>
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu_colorNormal="@color/orange"
+        app:menu_colorPressed="@color/orange_pressed"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fbaContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Contacto"
+            app:fab_colorNormal="@color/orange_pressed"
+            android:src="@drawable/ic_mail">
+        </com.github.clans.fab.FloatingActionButton>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fbaShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Compartir"
+            app:fab_colorNormal="@color/orange_pressed"
+            android:src="@drawable/ic_menu_share">
+        </com.github.clans.fab.FloatingActionButton>
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="220dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_line"
+            android:layout_marginTop="6dp"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_line"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="-34dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comidas"
+            android:textColor="@color/white_pressed"
+            android:textSize="25dp"
+            android:layout_marginStart="-8dp"
+            android:layout_marginEnd="-8dp" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_line"
+            android:layout_marginTop="6dp"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_line"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="-34dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="270dp">
+
+        <Button
+            android:id="@+id/btnDiet"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_rounded_white"
+            android:drawableLeft="@drawable/ic_food"
+            android:drawableTint="@color/orange"
+            android:paddingLeft="15dp"
+            android:drawablePadding="-10dp"/>
+
+        <Button
+            android:id="@+id/btnDiet2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Diario"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_rounded_white"
+            android:layout_marginStart="25dp"
+            android:drawableLeft="@drawable/ic_food"
+            android:drawableTint="@color/orange"
+            android:paddingLeft="25dp"
+            android:drawablePadding="-15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="370dp">
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_line"
+            android:layout_marginTop="6dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrenamientos"
+            android:textColor="@color/white_pressed"
+            android:textSize="25dp"
+            android:layout_marginStart="-4dp"
+            android:layout_marginEnd="-8dp"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_line"
+            android:layout_marginTop="6dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="420dp">
+
+        <Button
+            android:id="@+id/btnWorkout"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_rounded_white"
+            android:drawableLeft="@drawable/ic_dumbell"
+            android:drawableTint="@color/orange"
+            android:paddingLeft="15dp"
+            android:drawablePadding="-10dp"/>
+
+        <Button
+            android:id="@+id/btnWorkout2"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="Diario"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_rounded_white"
+            android:layout_marginStart="20dp"
+            android:drawableLeft="@drawable/ic_dumbell"
+            android:drawableTint="@color/orange"
+            android:paddingLeft="15dp"
+            android:drawablePadding="-10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="370dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_line"
+            android:layout_marginTop="6dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrenamientos"
+            android:textColor="@color/white_pressed"
+            android:textSize="25dp"
+            android:layout_marginStart="-4dp"
+            android:layout_marginEnd="-8dp"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_line"
+            android:layout_marginTop="6dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegisterPortions"
+    android:background="@color/fondo"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:text="Selecciona comida:"
+            android:textSize="30dp"
+            android:textColor="@color/white_pressed"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/rbD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desayuno"
+                android:onClick="checkButton"
+                android:checked="true"
+                android:textSize="26dp"
+                android:textColor="@color/white_pressed"/>
+
+            <RadioButton
+                android:id="@+id/rbC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comida"
+                android:onClick="checkButton"
+                android:textSize="26dp"
+                android:textColor="@color/white_pressed"/>
+
+            <RadioButton
+                android:id="@+id/rbM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Merienda"
+                android:onClick="checkButton"
+                android:textSize="26dp"
+                android:textColor="@color/white_pressed"/>
+
+            <RadioButton
+                android:id="@+id/rbCe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cena"
+                android:onClick="checkButton"
+                android:textSize="26dp"
+                android:textColor="@color/white_pressed"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="255dp">
+
+        <ListView
+            android:id="@+id/lvMacros"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:divider="@color/fondo"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_protein"
+            android:drawablePadding="10dp"
+            android:drawableTint="#EF7030"
+            android:text="Proteínas:"
+            android:textColor="@color/white_pressed"
+            android:textSize="30dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginStart="80dp"/>
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/npP"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="25dp"
+            app:np_dividerDistance="40dp"
+            app:np_max="20"
+            app:np_min="1"
+            app:np_orientation="horizontal"
+            app:np_wheelItemCount="1"
+            app:np_selectedTextColor="@color/white_pressed"
+            app:np_dividerColor="@color/orange"
+            android:layout_marginStart="-45dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_fats"
+            android:drawablePadding="10dp"
+            android:drawableTint="#EF7030"
+            android:text="Grasas:"
+            android:textColor="@color/white_pressed"
+            android:textSize="30dp"
+            android:layout_marginTop="390dp"
+            android:layout_marginStart="85dp"/>
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/npF"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="390dp"
+            android:layout_marginEnd="25dp"
+            app:np_dividerDistance="40dp"
+            app:np_max="20"
+            app:np_min="1"
+            app:np_orientation="horizontal"
+            app:np_wheelItemCount="1"
+            app:np_selectedTextColor="@color/white_pressed"
+            app:np_dividerColor="@color/orange"
+            android:layout_marginStart="-45dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_carbs"
+            android:drawablePadding="10dp"
+            android:drawableTint="#EF7030"
+            android:text="Carbohidratos:"
+            android:textColor="@color/white_pressed"
+            android:textSize="30dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginStart="80dp"/>
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/npC"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginEnd="25dp"
+            app:np_dividerDistance="40dp"
+            app:np_max="20"
+            app:np_min="1"
+            app:np_orientation="horizontal"
+            app:np_wheelItemCount="1"
+            app:np_selectedTextColor="@color/white_pressed"
+            app:np_dividerColor="@color/orange"
+            android:layout_marginStart="-45dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="405dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="620dp"
+            android:text="Registrar"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_rounded"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/orange"/>
+</RelativeLayout>

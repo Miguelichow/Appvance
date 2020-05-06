@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_measuring_tape_background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="180dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            style="@style/hint"
+            app:boxStrokeColor="@color/white"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="#0DFFFFFF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etHip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tripa (cm)"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:drawableLeft="@drawable/ic_measuring_tape"
+                android:drawableTint="@color/orange"
+                android:drawablePadding="10dp"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:imeOptions="actionDone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="270dp"
+        android:layout_marginStart="30dp"
+        android:theme="@style/CalenderViewCustom"
+        android:dateTextAppearance="@style/CalenderViewDateCustomText"
+        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+        android:firstDayOfWeek="2"
+        android:backgroundTint="#0DFFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="625dp">
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Insertar"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_rounded"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/orange"/>
+</RelativeLayout>

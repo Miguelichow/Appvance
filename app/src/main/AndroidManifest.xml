@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appvance">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.appvance.Recipes"></activity>
+        <activity android:name="com.example.appvance.Calculator" />
+        <activity android:name="com.example.appvance.ui.recipes.RecipesFragment" />
+        <activity android:name="com.example.appvance.PortionsTrack" />
+        <activity android:name="com.example.appvance.ChestGuide" />
+        <activity
+            android:name="com.example.appvance.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.appvance.ShoulderGuide" />
+        <activity android:name="com.example.appvance.BackGuide" />
+        <activity android:name="com.example.appvance.AbsGuide" />
+        <activity android:name="com.example.appvance.LegGuide" />
+        <activity android:name="com.example.appvance.BicepsGuide" />
+        <activity android:name="com.example.appvance.TricepsGuide" />
+        <activity android:name="com.example.appvance.MeasurementsTrack" />
+        <activity android:name="com.example.appvance.Technique" />
+        <activity android:name="com.example.appvance.WeightTrack" />
+        <activity android:name="com.example.appvance.WorkoutTrack" />
+        <activity android:name="com.example.appvance.SQLiteHelperExercises" />
+        <activity android:name="com.example.appvance.SQLiteHelperUsers" />
+        <activity android:name="com.example.appvance.Exercise" />
+        <activity android:name="com.example.appvance.User" />
+        <activity android:name="com.example.appvance.Register" />
+        <activity android:name="com.example.appvance.ExercisesList" />
+        <activity android:name="com.example.appvance.BackExercises" />
+        <activity android:name="com.example.appvance.AbsExercises" />
+        <activity android:name="com.example.appvance.CardioExercises" />
+        <activity android:name="com.example.appvance.BicepsExercises" />
+        <activity android:name="com.example.appvance.TricepsExercises" />
+        <activity android:name="com.example.appvance.LegExercises" />
+        <activity android:name="com.example.appvance.ShoulderExercises" />
+        <activity android:name="com.example.appvance.ChestExercises" />
+        <activity android:name="com.example.appvance.RegisterPortions" />
+        <activity android:name="com.example.appvance.Explanation" />
+        <activity android:name="com.example.appvance.Macros" />
+        <activity android:name="com.example.appvance.Target" />
+        <activity android:name="com.example.appvance.ActivityRequirements" />
+        <activity android:name="com.example.appvance.Portions" />
+        <activity android:name="com.example.appvance.Requirements" />
+        <activity android:name="com.example.appvance.ui.diet.DietFragment" />
+        <activity android:name="com.example.appvance.ui.gym.GymFragment" />
+        <activity android:name="com.example.appvance.ui.weight_chart.WeightChartFragment" />
+        <activity android:name="com.example.appvance.ui.measurements.MeasurementsFragment" />
+        <activity android:name="com.example.appvance.ui.home.HomeFragment" />
+        <activity
+            android:name="com.example.appvance.Login"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
